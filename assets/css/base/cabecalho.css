@@ -1,0 +1,31 @@
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-sizing: border-box;
+
+  width: 100%;
+
+  margin-bottom: 1.5rem;
+}
+
+.cabecalho__logo {
+  width: 9.0625rem;
+}
+
+.cabecalho__icones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__lupa {
+  width: 1.25rem;
+  padding: 0.875rem;
+}
+
+.cabecalho__menu {
+  width: 1.25rem;
+  padding: 0.875rem;
+}

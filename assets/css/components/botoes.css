@@ -1,0 +1,26 @@
+.botao {
+  background-color: var(--azul-normal-transparente);
+
+  text-align: center;
+  font-family: inherit;
+  font-weight: var(--peso);
+  font-size: inherit;
+  line-height: inherit;
+  color: var(--branco);
+
+  width: 100%;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  border: none;
+  border-radius: 8px;
+}
+
+.botao--salvar {
+  color: var(--azul-fundo);
+  background-color: var(--azul-normal);
+}
