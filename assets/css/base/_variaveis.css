@@ -1,0 +1,26 @@
+:root {
+  --azul-focus: #96b9fd;
+  --azul-hover: #7ba4fc;
+  --azul-normal: #5081fb;
+  --azul-normal-transparente: #5081fb14;
+  --azul-fundo: #051d3b;
+  --azul-codigo: #6bd1ff;
+
+  --branco: #ffffff;
+  --branco-transparente: #ffffff29;
+  --preto: #000000;
+  --preto-transparente: #0000003d;
+
+  --familia-corpo: "Inter", sans-serif;
+  --familia-codigo: "Roboto", sans-serif;
+  --tamanho-corpo: 1rem;
+  --tamanho-titulo: 1.3125rem;
+  --tamanho-menu: 0.75rem;
+  --tamanho-codigo: 0.875rem;
+
+  --altura-corpo: 1.5rem;
+  --altura-titulo: 2rem;
+  --altura-menu: 1.125rem;
+
+  --peso: 400;
+}

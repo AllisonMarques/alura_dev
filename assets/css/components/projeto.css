@@ -1,0 +1,16 @@
+.projeto__titulo {
+  font-family: var(--familia-corpo);
+  font-size: var(--tamanho-menu);
+  line-height: var(--altura-menu);
+  letter-spacing: 5px;
+}
+
+.projeto__linguagem {
+  height: 56px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.projeto__linguagem--texto {
+  color: #73726c;
+}

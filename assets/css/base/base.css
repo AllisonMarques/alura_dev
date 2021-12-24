@@ -1,0 +1,48 @@
+@import url(_reset.css);
+@import url(_variaveis.css);
+
+body {
+  background-color: var(--azul-fundo);
+
+  font-family: var(--familia-corpo);
+  font-size: var(--tamanho-corpo);
+  line-height: var(-altura-corpo);
+
+  color: var(--branco);
+}
+
+.container {
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 2, 5rem;
+  padding-left: 1rem;
+}
+
+/* .titulo {
+  font-size: var(--tamanho-titulo);
+}
+
+.titulo--destaque {
+font-family: var(--familia-titulo-destaque);
+  color: var(--preto);
+
+  font-size: var(--tamanho-titulo-destaque);
+  font-weight: var(--peso-titulo-destaque);
+
+  display: block;
+
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.alinhamento--esquerda {
+  text-align: left;
+}
+
+.alinhamento--meio {
+  text-align: center;
+}
+
+.texto {
+  line-height: 26px;
+} */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura DEV | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/components/botoes.css">
+    <link rel="stylesheet" href="assets/css/base/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/components/input.css">
+    <link rel="stylesheet" href="assets//css/components/codigo.css">
+    <link rel="stylesheet" href="assets/css/components/projeto.css">
+</head>
+
+<body>
+
+    <header class="container cabecalho">
+        <img src="assets/img/logo.svg" alt="Logo da Alura DEV" class="cabecalho__logo">
+        <div class="cabecalho__icones">
+            <a href="#" aria-label="Pesquisa">
+                <img src="assets/img/icons/lupa.svg" alt="Ícone de Pesquisa" class="cabecalho__lupa">
+            </a>
+            <a href="#" aria-label="Menu">
+                <img src="assets/img/icons/menu.svg" alt="Ícone de Menu" class="cabecalho__menu">
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="codigo">
+            <div class="codigo__fundo">
+                <img src="assets/img/icons/mac_buttons.svg" alt="" class="codigo__icone">
+                <code class="codigo__texto">
+
+const pluckDeep = key => obj
+=>
+key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) =>
+res => fns.reduce((accum,
+next) => next(accum), res)
+
+const unfold = (f, seed) =>
+{
+    const go = (f, seed, acc)
+=> {
+    const res = f(seed)
+    return res ? go(f,
+res[1], acc.concat([res[0]]))
+: acc
+    }
+    return go(f, seed, [])
+}
+                    </code>
+            </div>
+        </section>
+
+        <section class="projeto">
+            <p class="projeto__titulo">SEU PROJETO</p>
+            <input type="text" class="input" placeholder="Nome do seu projeto" aria-label="Nome do seu projeto">
+            <textarea class="input input--descricao" placeholder="Descrição do seu projeto"
+                name="Descrição do seu projeto">
+            </textarea>
+            <p class="projeto__titulo">PERSONALIZAÇÃO</p>
+        </section>
+
+        <button class="botao">Botão Padrão</button>
+        <button class="botao botao--salvar">Botão Alternativo</button>
+
+        <select name="Linguagem" class="projeto__linguagem input projeto__linguagem--texto">
+            <option value="javascript" class="op_js">JavaScript</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+        </select>
+
+        <input type="color" value="#6BD1FF" class="input__picker">
+        <button type="button" class="botao_salvar">Salvar projeto</button>
+
+
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.input {
+  font-family: inherit;
+  font-size: inherit;
+
+  width: 100%;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.875rem;
+
+  box-sizing: border-box;
+
+  background-color: var(--branco-transparente);
+
+  border: none;
+  border-radius: 0.5rem;
+
+  margin-top: 1rem;
+}
+
+.input--descricao {
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.input__picker {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+
+  border-radius: 0.5rem;
+
+  background-color: transparent;
+
+  border: 1px solid var(--branco);
+}
