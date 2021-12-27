@@ -1,5 +1,10 @@
+.codigo__desktop {
+  display: block;
+}
+
 .codigo {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -49,4 +54,24 @@
   position: relative;
   left: 3rem;
   top: 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .codigo__desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .codigo {
+    grid-area: "codigo";
+  }
+
+  /* .botao--highlight {
+    grid-area: "codigo";
+  }
+
+  .projeto {
+    grid-area: "personalizacao";
+  } */
 }

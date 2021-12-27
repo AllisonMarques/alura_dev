@@ -17,10 +17,13 @@ body {
   padding-left: 1rem;
 }
 
-@media screen and (max-width=375px) {
+@media screen and (min-width: 768px) {
   .container {
     padding-top: 2rem;
     padding-right: 2rem;
     padding-left: 2rem;
   }
+}
+
+@media screen and (min-width: 1024px) {
 }

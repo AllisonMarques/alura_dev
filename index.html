@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/base/base.css">
     <link rel="stylesheet" href="assets/css/components/botoes.css">
     <link rel="stylesheet" href="assets/css/base/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/base/menu.css">
     <link rel="stylesheet" href="assets/css/components/input.css">
     <link rel="stylesheet" href="assets//css/components/codigo.css">
     <link rel="stylesheet" href="assets/css/components/projeto.css">
@@ -19,6 +20,7 @@
 <body>
     <header class="container cabecalho">
         <img src="assets/img/logo.svg" alt="Logo da Alura DEV" class="cabecalho__logo">
+        <input type="text" class="input input--busca cabecalho__busca" placeholder="Busque por algo">
         <div class="cabecalho__icones">
             <a href="#" aria-label="Pesquisa">
                 <img src="assets/img/icons/lupa.svg" alt="Ícone de Pesquisa" class="cabecalho__lupa">
@@ -29,23 +31,43 @@
         </div>
     </header>
 
-    <main class="container">
+    <main class="container codigo__desktop">
+
+        <nav class="menu-lateral">
+            <p class="projeto__titulo">MENU</p>
+            <a href="#" class="menu-lateral__link">
+                <img src="assets/img/icons/codigo.svg" class="menu-lateral__link--editor">
+                Editor de código
+            </a>
+            <a href="#" class="menu-lateral__link">
+                <img src="assets/img/icons/comunidade.svg" class="menu-lateral__link--comunidade">
+                Comunidade
+            </a>
+        </nav>
+
         <section class="codigo">
             <div class="codigo__fundo">
                 <!-- <img src="assets/img/icons/mac_buttons.svg" alt="" class="codigo__icone"> -->
                 <code class="codigo__texto hljs" contenteditable="true" aria-label="Editor de códigos">
-.projeto__titulo {
-    font-family: var(--familia-corpo);
-    font-size: var(--tamanho-menu);
-    line-height: var(--altura-menu);
-    letter-spacing: 5px;
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+        const res = f(seed)
+        return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+    return go(f, seed, [])
 }
-</code>
+
+                </code>
 
             </div>
+            <button class="botao botao--highlight">Visualizar com highlights</button>
         </section>
 
-        <button class="botao botao--highlight">Visualizar com highlights</button>
+
 
         <section class="projeto">
             <p class="projeto__titulo">SEU PROJETO</p>
@@ -54,12 +76,16 @@
                 name="Descrição do seu projeto">
             </textarea>
             <p class="projeto__titulo">PERSONALIZAÇÃO</p>
-            <select name="linguagem" id="projeto__linguagem" class="projeto__linguagem input projeto__linguagem--texto">
-                <option value="javascript">JavaScript</option>
-                <option value="html">HTML</option>
-                <option value="css">CSS</option>
-            </select>
-            <input type="color" value="#6BD1FF" class="input__picker">
+            <div class="projeto__config">
+                <select name="linguagem" id="projeto__linguagem"
+                    class="projeto__linguagem input projeto__linguagem--texto">
+                    <option value="javascript">JavaScript</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+                <input type="color" value="#6BD1FF" class="input__picker">
+            </div>
+
             <button class="botao botao--salvar">Salvar projeto</button>
         </section>
 

@@ -14,3 +14,21 @@
 .projeto__linguagem--texto {
   color: #73726c;
 }
+
+@media screen and (min-width: 768px) {
+  .projeto__config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .projeto__linguagem {
+    margin-right: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .projeto {
+    width: 17rem;
+  }
+}

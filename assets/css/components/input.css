@@ -22,6 +22,12 @@
   resize: vertical;
   margin-bottom: 1rem;
 }
+.input--busca {
+  margin: 0px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  max-width: 37.25rem;
+}
 
 .input__picker {
   display: block;
@@ -33,4 +39,10 @@
   background-color: transparent;
 
   border: 1px solid var(--branco);
+}
+
+@media screen and (min-width: 768px) {
+  .input__picker {
+    margin-left: 0.5rem;
+  }
 }

@@ -10,8 +10,12 @@
   /* margin-bottom: 1.5rem; */
 }
 
+.cabecalho__busca {
+  display: none;
+}
+
 .cabecalho__logo {
-  width: 9.0625rem;
+  width: 145px;
 }
 
 .cabecalho__icones {
@@ -28,4 +32,21 @@
 .cabecalho__menu {
   width: 1.25rem;
   padding: 0.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cabecalho__busca {
+    display: block;
+  }
+
+  .cabecalho__lupa {
+    display: none;
+  }
+
+  .cabecalho__menu {
+    margin-left: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
 }
